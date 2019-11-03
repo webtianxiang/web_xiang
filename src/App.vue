@@ -21,7 +21,7 @@
                 <i class="el-icon-location"></i>
                 <span>算法分享</span>
               </template>
-              <el-menu-item index="1-1" route="bubbleSort">冒泡排序</el-menu-item>
+              <el-menu-item index="1-1" route="algorithm/bubbleSort">冒泡排序</el-menu-item>
               <el-menu-item index="1-2" route="insertSort">插入排序</el-menu-item>
               <el-menu-item index="1-3" route="chooseSort">选择排序</el-menu-item>
               <el-menu-item index="1-4" route="mergeSort">归并排序</el-menu-item>
