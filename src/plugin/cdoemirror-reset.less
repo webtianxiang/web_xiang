@@ -1,0 +1,23 @@
+.CodeMirror {
+  height: auto;
+  border-radius: 3px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+ * {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: monospace !important;
+  }
+}
+// overlay 滚动条
+.CodeMirror-overlayscroll-vertical div,
+.CodeMirror-overlayscroll-horizontal div {
+  background: rgba(80, 80, 80, 0.5);
+  box-shadow: 0 0 3px #fff;
+}
+
+// 横竖滚动条中间部分
+.CodeMirror-scrollbar-filler {
+  background-color: transparent;
+}
