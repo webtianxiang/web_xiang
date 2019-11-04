@@ -79,8 +79,7 @@ function bubbleSort (array, compareFn = defaultCompare) {
       let start = new Date().getTime()
       this.bubbleSort(array, this.defaultCompare)
       let end = new Date().getTime()
-      this.jsCode = this.jsCode + '\n冒泡排序算法耗时：' + (end - start) + 'ms'
-      console.log('冒泡排序算法:' + (end - start) + 'ms')
+      this.JsCode = this.JsCode + '\n冒泡排序算法耗时：' + (end - start) + 'ms'
     },
     testUpgradeEfficiency () {
       let array = this.randomNumber()
@@ -88,8 +87,7 @@ function bubbleSort (array, compareFn = defaultCompare) {
       let start = new Date().getTime()
       this.upgradeBubbleSort(array, this.defaultCompare)
       let end = new Date().getTime()
-      this.jsCode = this.jsCode + '\n冒泡排序算法耗时：' + (end - start) + 'ms'
-      console.log('优化冒泡排序算法:' + (end - start) + 'ms')
+      this.JsCode = this.JsCode + '\n冒泡排序算法耗时：' + (end - start) + 'ms'
     },
     bubbleSort (array = [], compareFn = this.defaultCompare) {
       const { length } = array
