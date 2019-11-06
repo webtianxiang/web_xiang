@@ -25,6 +25,7 @@
     </el-tabs>
     <codemirror
       :value="JsCode"
+      style="height: 600px"
       readonly>
     </codemirror>
   </div>
@@ -90,6 +91,7 @@ function selectionSort (array, compareFn = defaultCompare) {
       this.ChooseSort(array, this.defaultCompare)
       let end = new Date().getTime()
       this.JsCode = this.JsCode + '\n选择排序算法耗时：' + (end - start) + 'ms'
+      console.log(array)
     },
     testUpgradeEfficiency () {
       let array = this.randomNumber()
@@ -98,6 +100,7 @@ function selectionSort (array, compareFn = defaultCompare) {
       this.upgradeChooseSort(array, this.defaultCompare)
       let end = new Date().getTime()
       this.JsCode = this.JsCode + '\n选择排序算法耗时：' + (end - start) + 'ms'
+      console.log(array)
     },
     ChooseSort (array = [], compareFn = this.defaultCompare) {
       const { length } = array

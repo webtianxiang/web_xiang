@@ -25,6 +25,7 @@
     </el-tabs>
     <codemirror
       :value="JsCode"
+      style="height: 600px"
       readonly>
     </codemirror>
   </div>
@@ -90,9 +91,10 @@ function MergeSort (array, compareFn = defaultCompare) {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
       let start = new Date().getTime()
-      this.mergeSort(array, this.defaultCompare)
+      array = this.mergeSort(array, this.defaultCompare)
       let end = new Date().getTime()
       this.JsCode = this.JsCode + '\n归并排序算法耗时：' + (end - start) + 'ms'
+      console.log(array)
     },
     testUpgradeEfficiency () {
       let array = this.randomNumber()
@@ -101,6 +103,7 @@ function MergeSort (array, compareFn = defaultCompare) {
       this.upgradeMergeSort(array, this.defaultCompare)
       let end = new Date().getTime()
       this.JsCode = this.JsCode + '\n归并排序算法耗时：' + (end - start) + 'ms'
+      console.log(array)
     },
     // 将大数组转化为多个小数组直到其中只有一个项
     mergeSort (array, compareFn = this.defaultCompare) {

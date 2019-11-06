@@ -24,6 +24,16 @@ const routers = [
     path: '/quickSort',
     name: '快速排序',
     component: () => import('../views/algorithm/quickSort'/* webpackChunkName: "algorithm-quick-sort" */)
+  },
+  {
+    path: '/countSort',
+    name: '快速排序',
+    component: () => import('../views/algorithm/countSort'/* webpackChunkName: "algorithm-count-sort" */)
+  },
+  {
+    path: '/bucketSort',
+    name: '快速排序',
+    component: () => import('../views/algorithm/bucketSort'/* webpackChunkName: "algorithm-bucket-sort" */)
   }
 ]
 export default routers

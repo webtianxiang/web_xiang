@@ -16,6 +16,7 @@
     </el-tabs>
     <codemirror
       :value="JsCode"
+      style="height: 600px"
       readonly>
     </codemirror>
   </div>
@@ -60,6 +61,7 @@ function insertSort (array, compareFn = defaultCompare) {
       this.insertSort(array, this.defaultCompare)
       let end = new Date().getTime()
       this.JsCode = this.JsCode + '\n插入排序算法耗时：' + (end - start) + 'ms'
+      console.log(array)
     },
     insertSort (array, compareFn = this.defaultCompare) {
       const { length } = array

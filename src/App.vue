@@ -26,6 +26,8 @@
               <el-menu-item index="1-3" route="chooseSort">选择排序</el-menu-item>
               <el-menu-item index="1-4" route="mergeSort">归并排序</el-menu-item>
               <el-menu-item index="1-5" route="quickSort">快速排序</el-menu-item>
+              <el-menu-item index="1-6" route="countSort">计数排序</el-menu-item>
+              <el-menu-item index="1-7" route="bucketSort">桶排序</el-menu-item>
             </el-submenu>
             <el-menu-item index="2">
               <i class="el-icon-menu"></i>
@@ -84,5 +86,6 @@ export default {
 
 .el-main {
   height: 100vh;
+  max-height: 100vh;
 }
 </style>
