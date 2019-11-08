@@ -11,11 +11,15 @@
       <el-container>
         <el-aside width="230px">
           <el-menu
-            default-active="2"
+            default-active="0"
             router
             class="el-menu-vertical-demo"
             @open="handleOpen"
             @close="handleClose">
+            <el-menu-item index="0" route="home">
+              <i class="el-icon-menu"></i>
+              <span slot="title">首页</span>
+            </el-menu-item>
             <el-submenu index="1">
               <template slot="title">
                 <i class="el-icon-location"></i>
