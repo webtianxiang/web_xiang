@@ -194,36 +194,36 @@ function swap (array, a, b) {
     testSingleQuick () {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
-      let start = new Date().getTime()
+      let start = performance.now()
       array = this.singleQuickSort(array)
-      let end = new Date().getTime()
+      let end = performance.now()
       this.JsCode = this.JsCode + '\n快排排序算法耗时：' + (end - start) + 'ms'
       console.log(array)
     },
     testUpgradeSinglequick () {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
-      let start = new Date().getTime()
+      let start = performance.now()
       this.upgradeSingleQuickSort(array, 0, array.length - 1)
-      let end = new Date().getTime()
+      let end = performance.now()
       this.JsCode = this.JsCode + '\n快排排序算法耗时：' + (end - start) + 'ms'
       console.log(array)
     },
     testDoubleQuickSort () {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
-      let start = new Date().getTime()
+      let start = performance.now()
       this.doubleQuickSort(array)
-      let end = new Date().getTime()
+      let end = performance.now()
       this.JsCode = this.JsCode + '\n快排排序算法耗时：' + (end - start) + 'ms'
       console.log(array)
     },
     testTripleQuickquickSort () {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
-      let start = new Date().getTime()
+      let start = performance.now()
       this.tripleQuickquickSort(array)
-      let end = new Date().getTime()
+      let end = performance.now()
       this.JsCode = this.JsCode + '\n快排排序算法耗时：' + (end - start) + 'ms'
       console.log(array)
     },

@@ -75,9 +75,9 @@ function findMaxValue (array) {
     testNativeEfficiency () {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
-      let start = new Date().getTime()
+      let start = performance.now()
       array = this.countSort(array)
-      let end = new Date().getTime()
+      let end = performance.now()
       this.JsCode = this.JsCode + '\n计数排序算法耗时：' + (end - start) + 'ms'
       console.log(array)
     },

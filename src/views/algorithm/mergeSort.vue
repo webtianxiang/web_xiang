@@ -90,18 +90,18 @@ function MergeSort (array, compareFn = defaultCompare) {
     testNativeEfficiency () {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
-      let start = new Date().getTime()
+      let start = performance.now()
       array = this.mergeSort(array, this.defaultCompare)
-      let end = new Date().getTime()
+      let end = performance.now()
       this.JsCode = this.JsCode + '\n归并排序算法耗时：' + (end - start) + 'ms'
       console.log(array)
     },
     testUpgradeEfficiency () {
       let array = this.randomNumber()
       // 打印执行时间，以得到算法效率
-      let start = new Date().getTime()
+      let start = performance.now()
       this.upgradeMergeSort(array, this.defaultCompare)
-      let end = new Date().getTime()
+      let end = performance.now()
       this.JsCode = this.JsCode + '\n归并排序算法耗时：' + (end - start) + 'ms'
       console.log(array)
     },
