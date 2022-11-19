@@ -24,7 +24,7 @@
     "@vue/cli-plugin-router": "^4.0.0",
     "@vue/cli-plugin-unit-mocha": "^4.0.0",
     "@vue/cli-plugin-vuex": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
+    "@vue/cli-service": "^5.0.8",
     "@vue/eslint-config-prettier": "^5.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-eslint": "^10.0.3",
@@ -44,7 +44,7 @@
     "ready-promise": "^0.0.2",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "eslintConfig": {
     "root": true,
